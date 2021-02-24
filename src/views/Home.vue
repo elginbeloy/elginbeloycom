@@ -224,13 +224,15 @@ export default {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
   }
 
   .projects-container {
     position: relative;
-    width: 600px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
   }
 }
 </style>
