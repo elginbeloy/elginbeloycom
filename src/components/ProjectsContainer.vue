@@ -47,9 +47,13 @@
     </div>
 
     <a class="projects-header">Recent Projects</a>
-    <div class="project-container">
+    <div class="project-container clickable" @click="pytinder">
       <img class="project-container__bg-icon" src="@/assets/python.png" />
-      <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="pytinder" />
+      <img class="project-container__link-icon" src="@/assets/arrow.svg" />
+      <div class="project-container__lang-icons">
+        <img class="project-container__lang-icon" src="@/assets/python.png" />
+        <img class="project-container__lang-icon" src="@/assets/selenium.png" />
+      </div>
       <div class="project-container__title">
         PyTinder
       </div>
@@ -61,11 +65,16 @@
         interface and Seq2Seq LSTMs to chat with matched users.
       </a>
     </div>
-    <div class="project-container">
+    <div class="project-container clickable" @click="theia">
       <img class="project-container__bg-icon" src="@/assets/python.png" />
-      <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="theia" />
+      <img class="project-container__link-icon" src="@/assets/arrow.svg" />
+      <div class="project-container__lang-icons">
+        <img class="project-container__lang-icon" src="@/assets/python.png" />
+        <img class="project-container__lang-icon" src="@/assets/selenium.png" />
+        <img class="project-container__lang-icon" src="@/assets/keras.png" />
+      </div> 
       <a class="project-container__title">Theia (ML Music Recommender)</a>
-      <a class="project-container__sub-title">Python</a>
+      <a class="project-container__sub-title">Python, Selenium, Keras</a>
       <a class="project-container__desc">
         Built for a friend to advertise their songs on similar music, Theia 
         crawls YouTube Music sorting songs by "similarity" to a baseline. 
@@ -73,11 +82,15 @@
         second-to-last layer of a genre classifier CNN.
       </a>
     </div>
-    <div class="project-container">
+    <div class="project-container clickable" @click="elginbeloycom">
       <img class="project-container__bg-icon" src="@/assets/vue.png" />
-      <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="elginbeloycom" />
+      <img class="project-container__link-icon" src="@/assets/arrow.svg" />
+      <div class="project-container__lang-icons">
+        <img class="project-container__lang-icon" src="@/assets/javascript.png" />
+        <img class="project-container__lang-icon" src="@/assets/vue.png" />
+      </div>
       <a class="project-container__title">elginbeloy.com</a>
-      <a class="project-container__sub-title">JavaScript, Vue, Less</a>
+      <a class="project-container__sub-title">JavaScript, Vue</a>
       <a class="project-container__desc">
         My personal website - the one you're currently viewing. I built this
         version in VueJS, host it on Netlify, and have it open-source on Github.
@@ -85,11 +98,15 @@
         HTML/CSS/JQuery (remember the days before Node?).
       </a>
     </div>
-    <div class="project-container">
+    <div class="project-container clickable" @click="magic">
       <img class="project-container__bg-icon" src="@/assets/vue.png" />
-      <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="magic" />
+      <img class="project-container__link-icon" src="@/assets/arrow.svg" />
+      <div class="project-container__lang-icons">
+        <img class="project-container__lang-icon" src="@/assets/javascript.png" />
+        <img class="project-container__lang-icon" src="@/assets/vue.png" />
+      </div>
       <a class="project-container__title">Magic (A VueJS Game)</a>
-      <a class="project-container__sub-title">JavaScript, Vue, Less</a>
+      <a class="project-container__sub-title">JavaScript, Vue</a>
       <a class="project-container__desc">
         A little - but fun - game I made entirely in VueJS. Fight monsters, 
         buy new spells, find items, travel, whole lots of stuff in this little
@@ -185,6 +202,7 @@ export default {
     top: -20px;
     height: calc(100% + 40px);
     opacity: 0.04;
+    filter: blur(4px);
     z-index: 0;
     touch-action: none;
     -ms-touch-action: none;
@@ -193,16 +211,45 @@ export default {
     user-select: none;
   }
 
+  &:hover &__bg-icon {
+    filter: none;
+  }
+
   &__link-icon {
     position: absolute;
-    right: 13px;
+    right: 15px;
     bottom: 10px;
     height: 25px;
     transition: 0.2s linear all;
+  }
 
-    &:hover {
-      right: 10px;
-    }
+  &:hover &__link-icon {
+    right: 10px;
+    transform: scale(1.02);
+  }
+
+  &__lang-icons {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    
+    display: flex;
+    align-items: center;
+  }
+
+  &__lang-icon {
+    position: relative;
+    margin-right: 15px;
+
+    height: 30px;
+    filter: blur(2px);
+    opacity: 0.8;
+    transition: 0.2s linear all;
+  }
+
+  &:hover &__lang-icon {
+    opacity: 1;
+    filter: none;
   }
 
   &__title {
