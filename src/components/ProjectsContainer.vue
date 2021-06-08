@@ -151,6 +151,8 @@ export default {
   transform: scale(1.05);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   display: flex;
   flex-direction: column;
