@@ -42,6 +42,7 @@
 
     <a class="projects-header">Recent Projects</a>
     <div class="project-container">
+      <img class="project-container__bg-icon" src="@/assets/python.png" />
       <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="pytinder" />
       <div class="project-container__title">
         PyTinder
@@ -55,6 +56,7 @@
       </a>
     </div>
     <div class="project-container">
+      <img class="project-container__bg-icon" src="@/assets/python.png" />
       <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="theia" />
       <a class="project-container__title">Theia (ML Music Recommender)</a>
       <a class="project-container__sub-title">Python</a>
@@ -66,6 +68,7 @@
       </a>
     </div>
     <div class="project-container">
+      <img class="project-container__bg-icon" src="@/assets/vue.png" />
       <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="elginbeloycom" />
       <a class="project-container__title">elginbeloy.com</a>
       <a class="project-container__sub-title">JavaScript, Vue, Less</a>
@@ -77,6 +80,7 @@
       </a>
     </div>
     <div class="project-container">
+      <img class="project-container__bg-icon" src="@/assets/vue.png" />
       <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="magic" />
       <a class="project-container__title">Magic (A VueJS Game)</a>
       <a class="project-container__sub-title">JavaScript, Vue, Less</a>
@@ -143,7 +147,7 @@ export default {
 .project-container {
   position: relative;
   width: 100%;
-  padding: 10px;
+  padding: 14px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 4px;
@@ -159,10 +163,10 @@ export default {
 
   &__bg-icon {
     position: absolute;
-    right: -100px;
-    top: -50px;
-    height: calc(100% + 100px);
-    opacity: 0.03;
+    right: -30px;
+    top: -20px;
+    height: calc(100% + 40px);
+    opacity: 0.04;
     z-index: 0;
     touch-action: none;
     -ms-touch-action: none;
