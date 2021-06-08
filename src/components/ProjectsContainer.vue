@@ -166,6 +166,9 @@ export default {
     z-index: 0;
     touch-action: none;
     -ms-touch-action: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   &__link-icon {
