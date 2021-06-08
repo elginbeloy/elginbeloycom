@@ -142,7 +142,6 @@ export default {
 
 .project-container {
   position: relative;
-  z-index: 0;
   width: 100%;
   padding: 10px;
   margin-top: 20px;
@@ -164,6 +163,7 @@ export default {
     top: -50px;
     height: calc(100% + 100px);
     opacity: 0.03;
+    z-index: 0;
   }
 
   &__link-icon {
