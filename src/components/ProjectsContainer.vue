@@ -25,11 +25,10 @@
       <a class="project-container__title">Storr (Software Engineer)</a>
       <a class="project-container__sub-title">Jul 2019 - Oct 2019</a>
       <a class="project-container__desc">
-        As one of the first engineers in this SF-born startup, I focused on
+        As one of the early engineers in this SF-born startup, I focused on
         developing new features such as a cart, new UI, and updating the buying 
         experience for a React Native app focused on social buying and selling
-        of recommended products. The idea of a P2P marketplace for products
-        you can trust because your contacts signed off appealed to me.
+        of recommended products.
       </a>
     </div>
     <div class="project-container">
@@ -38,13 +37,12 @@
       <a class="project-container__sub-title">Apr 2018 - Jul 2019</a>
       <a class="project-container__desc">
         At 16 I dropped out of high-school and moved to CA to start my own
-        company. Both attempts (Cohereum, Levana) were focused on coding an 
-        Auto-AI platform to make building custom machine learning 
-        solutions easier for non-tech businesses. We raised a few million 
+        company. Both attempts (Cohereum & Levana) were focused on coding an 
+        Auto-ML platform to make building custom machine learning 
+        solutions easier for non-tech businesses. We raised a few million USD
         and developed an end-to-end platform for building neural nets, but
-        ultimately failed - largely due to my own shortcomings as a CTO. 
-        Nonetheless, the experience taught me a great deal about perseverance, 
-        company structure, law, technology, and machine learning.
+        ultimately failed. Nonetheless, the experience taught me a great deal 
+        about perseverance, company structure, law, technology, and machine learning.
       </a>
     </div>
 
