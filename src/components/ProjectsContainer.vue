@@ -1,12 +1,12 @@
 <template>
   <div class="projects-container">
-    <img class="cloud" src="@/assets/cloud.png" style="top: 120px; left: 60px; width: 390px; opacity: 0.02;" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 600px; left: 820px; width: 140px; opacity: 0.03;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 120px; left: 60px; width: 390px; opacity: 0.02; transform: scaleX(-1);" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 600px; left: 820px; width: 140px; opacity: 0.03; transform: scaleX(-1);" />
     <img class="cloud" src="@/assets/cloud.png" style="top: 40px; right: 480px; width: 220px; opacity: 0.04;" />
     <img class="cloud" src="@/assets/cloud.png" style="bottom: 30px; left: 400px; width: 460px; opacity: 0.04;" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 130px; right: 20px; width: 340px; opacity: 0.05;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 130px; right: 20px; width: 340px; opacity: 0.05; transform: scaleX(-1);" />
     <img class="cloud" src="@/assets/cloud.png" style="top: 600px; right: 420px; width: 160px; opacity: 0.06;" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 900px; right: 240px; width: 280px; opacity: 0.06;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 900px; right: 240px; width: 280px; opacity: 0.06; transform: scaleX(-1);" />
     
     <a class="projects-header">Experience</a>
     <div class="project-container">
@@ -140,6 +140,24 @@ export default {
 
 <style scoped lang="scss">
 
+@keyframes cloud_floating {
+  0% { 
+    transform: none;
+  }
+  25% {
+    transform: translateX(-100px) translateY(-100px);
+  }
+  50% {
+    transform: translateX(-50px) translateY(0px);
+  }
+  50% {
+    transform: translateX(50px) translateY(100px);
+  }
+  100% { 
+    transform: none;
+  }
+}
+
 .projects-container {
   position: absolute;
   top: 0%;
@@ -163,6 +181,11 @@ export default {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+
+  animation: cloud_floating 50s linear infinite;
+  -ms-animation: cloud_floating 50s linear infinite;
+  -moz-animation: cloud_floating 50s linear infinite;
+  -webkit-animation: cloud_floating 50s linear infinite;
 }
 
 .projects-header {
