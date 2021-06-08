@@ -11,8 +11,6 @@
       <span class="green-text">data science</span>,
       <span class="green-text">penetration testing</span>, and
       <span class="green-text">UI/UX design</span>.
-      I'm currently working on ML algorithms for my own day trading practice, 
-      but am open to new opportunities! :)
     </a>
     <div class="hero-links">
       <div class="hero-links__link" @click="github">
@@ -23,6 +21,9 @@
       </div>
       <div class="hero-links__link" @click="email">
         <img src="@/assets/mail.svg" />
+      </div>
+      <div class="hero-links__link" @click="resume">
+        <img src="@/assets/resume.svg" />
       </div>
     </div>
   </div>
@@ -41,6 +42,9 @@ export default {
     },
     email: function () {   
       window.open("mailto:beloy.elgin@gmail.com", "_blank");    
+    },
+    resume: function () {   
+      window.open(require('@/assets/resume.pdf'), "_blank");    
     },
   }
 }

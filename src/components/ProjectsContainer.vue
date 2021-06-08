@@ -1,5 +1,13 @@
 <template>
   <div class="projects-container">
+    <img class="cloud" src="@/assets/cloud.png" style="top: 120px; left: 60px; width: 390px; opacity: 0.02;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 600px; left: 820px; width: 140px; opacity: 0.03;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 40px; right: 480px; width: 220px; opacity: 0.04;" />
+    <img class="cloud" src="@/assets/cloud.png" style="bottom: 30px; left: 400px; width: 460px; opacity: 0.04;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 130px; right: 20px; width: 340px; opacity: 0.05;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 600px; right: 420px; width: 160px; opacity: 0.06;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 900px; right: 240px; width: 280px; opacity: 0.06;" />
+    
     <a class="projects-header">Experience</a>
     <div class="project-container">
       <img class="project-container__bg-icon" src="@/assets/google.svg" />
@@ -131,6 +139,17 @@ export default {
   flex-direction: column;
 }
 
+.cloud {
+  position: fixed;
+  filter: drop-shadow(0 0.5rem 0.5rem #0071de);
+  z-index: 0;
+  touch-action: none;
+  -ms-touch-action: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .projects-header {
   color: #0071de;
   font-size: 32px;
@@ -150,8 +169,9 @@ export default {
   padding: 14px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 4px;
+  background-color: #191919;
   border: 1px solid #0071de;
+  border-radius: 4px;
   transform: scale(1.05);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
   overflow: hidden;
