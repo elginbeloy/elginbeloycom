@@ -61,7 +61,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .green-text {
@@ -73,8 +73,8 @@ export default {
   width: 100%;
 
   color: #0071de;
-  font-size: 76px;
-  font-weight: 100;
+  font-size: 82px;
+  font-weight: 200;
   letter-spacing: 8px;
   margin-bottom: 20px;
 }
@@ -82,11 +82,12 @@ export default {
 .subtitle {
   position: relative;
   width: 100%;
+  max-width: 800px;
 
   color: #0071de;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 2px;
-  line-height: 36px;
+  line-height: 40px;
 }
 
 .hero-links {
@@ -114,13 +115,12 @@ export default {
   align-items: center;
 
   img {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 
   &:hover {
     border-color: #0071de;
-    box-shadow: 0 0 8px 2px #0071de60;
-    transform: scale(1.05);
+    box-shadow: 0 0 8px 2px #0071de;
 
     img {
       opacity: 1;
@@ -136,10 +136,11 @@ export default {
     height: auto;
     margin: 0;
     padding: 20px;
+
+    align-items: center;
   }
 
   .title {
-    font-size: 36px;
     margin-bottom: 40px;
   }
 

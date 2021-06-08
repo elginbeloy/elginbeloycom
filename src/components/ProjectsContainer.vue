@@ -57,7 +57,7 @@
     <div class="project-container">
       <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="theia" />
       <a class="project-container__title">Theia (ML Music Recommender)</a>
-      <a class="project-container__sub-title">Python, Selenium</a>
+      <a class="project-container__sub-title">Python</a>
       <a class="project-container__desc">
         Built for a friend to advertise their songs on similar music, Theia 
         crawls YouTube Music sorting songs by "similarity" to a baseline. 
@@ -68,7 +68,7 @@
     <div class="project-container">
       <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="elginbeloycom" />
       <a class="project-container__title">elginbeloy.com</a>
-      <a class="project-container__sub-title">Python, Selenium</a>
+      <a class="project-container__sub-title">JavaScript, Vue, Less</a>
       <a class="project-container__desc">
         My personal website - the one you're currently viewing. I built this
         version in VueJS, host it on Netlify, and have it open-source on Github.
@@ -79,7 +79,7 @@
     <div class="project-container">
       <img class="project-container__link-icon clickable" src="@/assets/arrow.svg" @click="magic" />
       <a class="project-container__title">Magic (A VueJS Game)</a>
-      <a class="project-container__sub-title">Python, Selenium</a>
+      <a class="project-container__sub-title">JavaScript, Vue, Less</a>
       <a class="project-container__desc">
         A little - but fun - game I made entirely in VueJS. Fight monsters, 
         buy new spells, find items, travel, whole lots of stuff in this little
@@ -160,7 +160,7 @@ export default {
     right: -100px;
     top: -50px;
     height: calc(100% + 100px);
-    opacity: 0.05;
+    opacity: 0.03;
   }
 
   &__link-icon {
@@ -176,19 +176,19 @@ export default {
   }
 
   &__title {
-    font-size: 18px;
+    font-size: 20px;
     color: #2ce692;
     margin-bottom: 10px;
   }
 
   &__sub-title {
-    font-size: 12px;
+    font-size: 14px;
     color: #ffffff;
     margin-bottom: 10px;
   }
 
   &__desc {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 32px;
     color: #0071de;
     margin-bottom: 10px;
