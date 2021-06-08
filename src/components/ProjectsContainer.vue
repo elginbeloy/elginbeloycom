@@ -33,7 +33,7 @@
     </div>
     <div class="project-container">
       <img class="project-container__bg-icon" src="@/assets/startup.svg" />
-      <a class="project-container__title">Failed AI Startup (Co-Founder, CTO)</a>
+      <a class="project-container__title">Defunct AI Startup (Co-Founder, CTO)</a>
       <a class="project-container__sub-title">Apr 2018 - Jul 2019</a>
       <a class="project-container__desc">
         At 16 I dropped out of high-school and moved to CA to start my own
