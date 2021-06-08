@@ -142,6 +142,7 @@ export default {
 
 .project-container {
   position: relative;
+  z-index: 0;
   width: 100%;
   padding: 10px;
   margin-top: 20px;
