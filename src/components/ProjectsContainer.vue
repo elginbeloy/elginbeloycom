@@ -164,6 +164,8 @@ export default {
     height: calc(100% + 100px);
     opacity: 0.03;
     z-index: 0;
+    touch-action: none;
+    -ms-touch-action: none;
   }
 
   &__link-icon {
