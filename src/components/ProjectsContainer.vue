@@ -124,19 +124,19 @@
 export default {
   name: 'ProjectsContainer',
   methods: {
-  pytinder: function () {   
-    window.open("https://github.com/elginbeloy/PyTinder", "_blank");    
-  },
-  theia: function () {   
-    window.open("https://github.com/elginbeloy/Theia", "_blank");    
-  },
-  elginbeloycom: function () {   
-    window.open("https://github.com/elginbeloy/elginbeloycom", "_blank");    
-  },
-  magic: function () {   
-    window.open("https://github.com/elginbeloy/Magic", "_blank");    
-  },
-}
+    pytinder: function () {   
+      window.open("https://github.com/elginbeloy/PyTinder", "_blank");    
+    },
+    theia: function () {   
+      window.open("https://github.com/elginbeloy/Theia", "_blank");    
+    },
+    elginbeloycom: function () {   
+      window.open("https://github.com/elginbeloy/elginbeloycom", "_blank");
+    },
+    magic: function () {   
+      window.open("https://github.com/elginbeloy/Magic", "_blank");    
+    },
+  }
 }
 
 </script>
