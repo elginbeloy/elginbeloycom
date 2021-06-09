@@ -1,12 +1,15 @@
 <template>
   <div class="projects-container">
-    <img class="cloud" src="@/assets/cloud.png" style="top: 120px; left: 60px; width: 390px; opacity: 0.02; transform: scaleX(-1);" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 600px; left: 820px; width: 140px; opacity: 0.03; transform: scaleX(-1);" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 40px; right: 480px; width: 220px; opacity: 0.04;" />
-    <img class="cloud" src="@/assets/cloud.png" style="bottom: 30px; left: 400px; width: 460px; opacity: 0.04;" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 130px; right: 20px; width: 340px; opacity: 0.05; transform: scaleX(-1);" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 600px; right: 420px; width: 160px; opacity: 0.06;" />
-    <img class="cloud" src="@/assets/cloud.png" style="top: 900px; right: 240px; width: 280px; opacity: 0.06; transform: scaleX(-1);" />
+    <img class="cloud cloud--flipped" src="@/assets/cloud.png" style="top: 43%; left: -8%; width: 43%; opacity: 0.01;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 51%; left: 89%; width: 13%; opacity: 0.02;" />
+    <img class="cloud cloud--flipped" src="@/assets/cloud.png" style="top: 15%; left: -5%; width: 23%; opacity: 0.03;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 13%; left: 28%; width: 6%; opacity: 0.03;" />
+    <img class="cloud cloud--flipped" src="@/assets/cloud.png" style="top: 8%; left: 90%; width: 22%; opacity: 0.04;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 88%; left: 36%; width: 16%; opacity: 0.04;" />
+    <img class="cloud cloud--flipped" src="@/assets/cloud.png" style="top: 108%; left: 73%; width: 4%; opacity: 0.05;" />
+    <img class="cloud" src="@/assets/cloud.png" style="top: 31%; left: 82%; width: 14%; opacity: 0.05;" />
+    <img class="cloud cloud--flipped" src="@/assets/cloud.png" style="top: 63%; left: 31%; width: 8%; opacity: 0.06;" />
+    <img class="cloud cloud--flipped" src="@/assets/cloud.png" style="top: 27%; left: 43%; width: 12%; opacity: 0.06;" />
     
     <a class="projects-header">Experience</a>
     <div class="project-container">
@@ -144,17 +147,23 @@ export default {
   0% { 
     transform: none;
   }
-  25% {
-    transform: translateX(-100px) translateY(-100px);
-  }
   50% {
-    transform: translateX(-50px) translateY(0px);
-  }
-  50% {
-    transform: translateX(50px) translateY(100px);
+    transform: translateX(-150px) translateY(-150px);
   }
   100% { 
     transform: none;
+  }
+}
+
+@keyframes cloud_floating_flipped {
+  0% { 
+    transform: scaleX(-1);
+  }
+  50% {
+    transform: translateX(-150px) translateY(-150px) scaleX(-1);
+  }
+  100% { 
+    transform: scaleX(-1);
   }
 }
 
@@ -182,10 +191,17 @@ export default {
   -webkit-user-select: none;
   user-select: none;
 
-  animation: cloud_floating 50s linear infinite;
-  -ms-animation: cloud_floating 50s linear infinite;
-  -moz-animation: cloud_floating 50s linear infinite;
-  -webkit-animation: cloud_floating 50s linear infinite;
+  animation: cloud_floating 30s linear infinite;
+  -ms-animation: cloud_floating 30s linear infinite;
+  -moz-animation: cloud_floating 30s linear infinite;
+  -webkit-animation: cloud_floating 30s linear infinite;
+}
+
+.cloud--flipped {
+  animation: cloud_floating_flipped 30s linear infinite;
+  -ms-animation: cloud_floating_flipped 30s linear infinite;
+  -moz-animation: cloud_floating_flipped 30s linear infinite;
+  -webkit-animation: cloud_floating_flipped 30s linear infinite;
 }
 
 .projects-header {
