@@ -240,7 +240,6 @@ export default {
   background-color: #191919;
   border: 1px solid #0071de;
   border-radius: 4px;
-  transform: scale(1.05);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
   overflow: hidden;
   overflow-x: hidden;
@@ -248,6 +247,11 @@ export default {
 
   display: flex;
   flex-direction: column;
+}
+
+.clickable:hover {
+  box-shadow: 0 0 8px 2px #0071de;
+  transform: scale(1.01);
 }
 
 .project-container__link-icon {
@@ -286,13 +290,13 @@ export default {
 }
 
 .project-container__title {
-  font-size: 20px;
+  font-size: 22px;
   color: #2ce692;
   margin-bottom: 10px;
 }
 
 .project-container__sub-title {
-  font-size: 14px;
+  font-size: 15px;
   color: #ffffff;
   margin-bottom: 10px;
 }
