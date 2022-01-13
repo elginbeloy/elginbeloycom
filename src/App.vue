@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
 html, body {
   margin: 0;
@@ -41,7 +41,7 @@ html, body {
   font-family: 'Raleway', sans-serif;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 300;
+  font-weight: 400;
   overflow-y: auto;
 }
 </style>
