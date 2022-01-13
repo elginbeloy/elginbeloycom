@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <HeroText />
+    <ProjectsContainer />    
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeroText from "./components/HeroText.vue";
+import ProjectsContainer from "./components/ProjectsContainer.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeroText,
+    ProjectsContainer
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
+html, body {
+  margin: 0;
+  background-color: #191919;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+
+  font-family: 'Raleway', sans-serif;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-weight: 300;
+  overflow-y: auto;
 }
 </style>
