@@ -17,7 +17,7 @@
       <a class="project-container__sub-title">Oct 2019 - Dec 2020</a>
       <a class="project-container__sub-title">Jul 2020 - Present</a>
       <a class="project-container__desc">
-        After first joining I workeded on buit-in software for the newest 
+        After first joining I worked on built-in software for the newest 
         generation of Google Smart Displays and some pages for Routines in
         the Google Home App. I helped my team create experiences using Dart, 
         Flutter, JavaScript, and some proprietary Google frameworks. 
@@ -89,13 +89,16 @@
         <img class="project-container__lang-icon" src="@/assets/selenium.png" />
         <img class="project-container__lang-icon" src="@/assets/keras.png" />
       </div> 
-      <a class="project-container__title">Theia (ML Music Recommender)</a>
+      <a class="project-container__title">Theia</a>
       <a class="project-container__sub-title">Python, Selenium, Keras</a>
       <a class="project-container__desc">
-        Built for a friend to advertise their songs on similar music, Theia 
-        crawls YouTube Music sorting songs by "similarity" to a baseline. 
+        A ML approach to measuring music similarity I built for a friend 
+        to increase click-through rates and decrease advertising cost for 
+        their music. Theia crawls YouTube Music downloading songs to 
+        compare to a baseline spitting out the top-N closest songs. 
         Theia decides "similarity" by using the cosine distance between the
-        second-to-last layer of a genre classifier CNN.
+        second-to-last layer of a genre classification Convolutional Neural Net
+        that takes in the music spectrograms as visual input data.
       </a>
     </div>
     <div class="project-container clickable" @click="elginbeloycom">
