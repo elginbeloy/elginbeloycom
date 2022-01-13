@@ -124,14 +124,14 @@ export default {
   opacity: 0.8;
 }
 
-.hero-links__link img :hover {
+.hero-links__link:hover {
   border-color: #0071de;
   box-shadow: 0 0 8px 2px #0071de;
+}
 
-  img {
-    opacity: 1;
-    filter: drop-shadow(0 0 8px #0071de);
-  }
+.hero-links__link:hover img {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px #0071de);
 }
 
 @media (max-width: 800px) {
