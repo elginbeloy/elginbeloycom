@@ -65,23 +65,6 @@
     </div>
 
     <a class="projects-header">Recent Projects</a>
-    <div class="project-container clickable" @click="pytinder">
-      <img class="project-container__link-icon" src="@/assets/arrow.svg" />
-      <div class="project-container__lang-icons">
-        <img class="project-container__lang-icon" src="@/assets/python.png" />
-        <img class="project-container__lang-icon" src="@/assets/selenium.png" />
-      </div>
-      <div class="project-container__title">
-        PyTinder
-      </div>
-      <a class="project-container__sub-title">Python, Selenium</a>
-      <a class="project-container__desc">
-        PyTinder is a fun side-project that aims to automate the entire 
-        Tinder lifecycle, from swiping right to the date being setup.
-        PyTinder uses Selenium to automate interaction with the Tinder web 
-        interface and Seq2Seq LSTMs to chat with matched users.
-      </a>
-    </div>
     <div class="project-container clickable" @click="theia">
       <img class="project-container__link-icon" src="@/assets/arrow.svg" />
       <div class="project-container__lang-icons">
@@ -99,6 +82,23 @@
         Theia decides "similarity" by using the cosine distance between the
         second-to-last layer of a genre classification Convolutional Neural Net
         that takes in the music spectrograms as visual input data.
+      </a>
+    </div>
+    <div class="project-container clickable" @click="pytinder">
+      <img class="project-container__link-icon" src="@/assets/arrow.svg" />
+      <div class="project-container__lang-icons">
+        <img class="project-container__lang-icon" src="@/assets/python.png" />
+        <img class="project-container__lang-icon" src="@/assets/selenium.png" />
+      </div>
+      <div class="project-container__title">
+        PyTinder
+      </div>
+      <a class="project-container__sub-title">Python, Selenium</a>
+      <a class="project-container__desc">
+        PyTinder is a fun side-project that aims to automate the entire 
+        Tinder lifecycle, from swiping right to the date being setup.
+        PyTinder uses Selenium to automate interaction with the Tinder web 
+        interface and Seq2Seq LSTMs to chat with matched users.
       </a>
     </div>
     <div class="project-container clickable" @click="elginbeloycom">
