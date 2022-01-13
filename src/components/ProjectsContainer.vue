@@ -15,11 +15,29 @@
     <div class="project-container">
       <a class="project-container__title">Google (Software Engineer)</a>
       <a class="project-container__sub-title">Oct 2019 - Dec 2020</a>
+      <a class="project-container__sub-title">Jul 2020 - Present</a>
       <a class="project-container__desc">
-        Working on the Google Smart Displays and the Google Home App, I
-        helped my team create experiences using Dart, Flutter, 
-        and some proprietary Google web frameworks. My main work was on the 
-        Google Home App experience for Automated Home Routines.
+        After first joining I workeded on buit-in software for the newest 
+        generation of Google Smart Displays and some pages for Routines in
+        the Google Home App. I helped my team create experiences using Dart, 
+        Flutter, JavaScript, and some proprietary Google frameworks. 
+        
+        Now I primarily work on Google Payments pages which are used in 
+        Google Play, Youtube, and other integrating apps / websites.
+      </a>
+    </div>
+    <div class="project-container">
+      <a class="project-container__title">Quant Day Trader</a>
+      <a class="project-container__sub-title">Dec 2020 - Present</a>
+      <a class="project-container__desc">
+        I study different approaches to trading / asset management, 
+        focusing heavily on machine learning + alternative data use cases. 
+        Currently I'm studying ML-based risk management, portfolio construction,
+        strategy backtesting, and statistical significance testing. 
+        I use my own home-coded, Python based backtesting system which 
+        utilizes tick level data from polygon.io. I mainly read online articles,
+        papers, and books from Chen and Lopez de Prado (with some technical analysis
+        though I quickly lost interest with poor backtest results).
       </a>
     </div>
     <div class="project-container">
